@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DTO - Kakao OAuth 2.0 인증 응답 데이터 테스트" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-29T14:14:48" hostname="Kimui-MacBookAir.local" time="0.005">
+  <properties/>
+  <testcase name="인증 결과를 Map(deserialized json)으로 받으면, 카카오 인증 응답 객체로 변환한다." classname="com.keyworld.projectboard.dto.security.KakaoOAuth2ResponseTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

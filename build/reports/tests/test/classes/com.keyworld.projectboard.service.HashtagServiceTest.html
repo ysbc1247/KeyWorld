@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - 비즈니스 로직 - 해시태그</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>비즈니스 로직 - 해시태그</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.keyworld.projectboard.service.html">com.keyworld.projectboard.service</a> &gt; HashtagServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">38</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.016s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[10] &quot;#java&quot; =&gt; [java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[10]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[11] &quot;#java_spring&quot; =&gt; [java_spring]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[11]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[12] &quot;#java-spring&quot; =&gt; [java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[12]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[13] &quot;#_java_spring&quot; =&gt; [_java_spring]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[13]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[14] &quot;#-java-spring&quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[14]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[15] &quot;#_java_spring__&quot; =&gt; [_java_spring__]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[15]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[16] &quot;#java#spring&quot; =&gt; [spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[16]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[17] &quot;#java #spring&quot; =&gt; [spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[17]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[18] &quot;#java  #spring&quot; =&gt; [spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[18]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[19] &quot;#java   #spring&quot; =&gt; [spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[19]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] &quot;null&quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[1]</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[20] &quot;#java     #spring&quot; =&gt; [spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[20]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[21] &quot;  #java     #spring &quot; =&gt; [spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[21]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[22] &quot;   #java     #spring   &quot; =&gt; [spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[22]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[23] &quot;#java#spring#부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[23]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[24] &quot;#java #spring#부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[24]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[25] &quot;#java#spring #부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[25]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[26] &quot;#java,#spring,#부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[26]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[27] &quot;#java.#spring;#부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[27]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[28] &quot;#java|#spring:#부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[28]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[29] &quot;#java #spring  #부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[29]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] &quot;&quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[2]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[30] &quot;   #java,? #spring  ...  #부트 &quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[30]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[31] &quot;#java#java#spring#부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[31]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[32] &quot;#java#java#java#spring#부트&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[32]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[33] &quot;#java#spring#java#부트#java&quot; =&gt; [부트, spring, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[33]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[34] &quot;#java#스프링 아주 긴 글~~~~~~~~~~~~~~~~~~~~~&quot; =&gt; [스프링, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[34]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[35] &quot;아주 긴 글~~~~~~~~~~~~~~~~~~~~~#java#스프링&quot; =&gt; [스프링, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[35]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[36] &quot;아주 긴 글~~~~~~#java#스프링~~~~~~~~~~~~~~~&quot; =&gt; [스프링, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[36]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[37] &quot;아주 긴 글~~~~~~#java~~~~~~~#스프링~~~~~~~~&quot; =&gt; [스프링, java]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[37]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] &quot;   &quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[3]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] &quot;#&quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[4]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] &quot;  #&quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[5]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6] &quot;#   &quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[6]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[7] &quot;java&quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[7]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[8] &quot;java#&quot; =&gt; []</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[8]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[9] &quot;ja#va&quot; =&gt; [va]</td>
+<td class="success">givenContent_whenParsing_thenReturnsUniqueHashtagNames(String, Set)[9]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">해시태그 이름들을 입력하면, 저장된 해시태그 중 이름에 매칭하는 것들을 중복 없이 반환한다.</td>
+<td class="success">givenHashtagNames_whenFindingHashtags_thenReturnsHashtagSet()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at Dec 29, 2022, 11:14:49 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="비즈니스 로직 - 게시글" tests="16" skipped="0" failures="0" errors="0" timestamp="2022-12-29T14:14:48" hostname="Kimui-MacBookAir.local" time="0.037">
+  <properties/>
+  <testcase name="게시글을 해시태그 검색하면, 게시글 페이지를 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.02"/>
+  <testcase name="게시글 작성자가 아닌 사람이 수정 정보를 입력하면, 아무 것도 하지 않는다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="없는 게시글의 수정 정보를 입력하면, 경고 로그를 찍고 아무 것도 하지 않는다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="게시글을 조회하면, 게시글을 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="해시태그를 조회하면, 유니크 해시태그 리스트를 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="검색어 없이 게시글을 검색하면, 게시글 페이지를 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="게시글 ID로 조회하면, 댓글 달긴 게시글을 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="없는 해시태그를 검색하면, 빈 페이지를 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.0"/>
+  <testcase name="게시글이 없으면, 예외를 던진다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="게시글 정보를 입력하면, 본문에서 해시태그 정보를 추출하여 해시태그 정보가 포함된 게시글을 생성한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="댓글 달린 게시글이 없으면, 예외를 던진다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="게시글 수를 조회하면, 게시글 수를 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="검색어 없이 게시글을 해시태그 검색하면, 빈 페이지를 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="검색어와 함께 게시글을 검색하면, 게시글 페이지를 반환한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.001"/>
+  <testcase name="게시글의 ID를 입력하면, 게시글을 삭제한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.002"/>
+  <testcase name="게시글의 수정 정보를 입력하면, 게시글을 수정한다." classname="com.keyworld.projectboard.service.ArticleServiceTest" time="0.002"/>
+  <system-out><![CDATA[2022-12-29 23:14:48.851  WARN 68088 --- [    Test worker] c.k.projectboard.service.ArticleService  : 게시글 업데이트 실패. 게시글을 수정하는데 필요한 정보를 찾을 수 없습니다 - null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

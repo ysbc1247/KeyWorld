@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DTO - 댓글을 포함한 게시글 응답 테스트" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-29T14:14:48" hostname="Kimui-MacBookAir.local" time="0.039">
+  <properties/>
+  <testcase name="게시글 + 댓글 dto를 api 응답으로 변환할 때, 부모 자식 관계 깊이(depth)는 제한이 없다." classname="com.keyworld.projectboard.dto.response.ArticleWithCommentsResponseTest" time="0.031"/>
+  <testcase name="자식 댓글이 없는 게시글 + 댓글 dto를 api 응답으로 변환할 때, 댓글을 시간 내림차순 + ID 오름차순으로 정리한다." classname="com.keyworld.projectboard.dto.response.ArticleWithCommentsResponseTest" time="0.004"/>
+  <testcase name="게시글 + 댓글 dto를 api 응답으로 변환할 때, 댓글 부모 자식 관계를 각각의 규칙으로 정렬하여 정리한다." classname="com.keyworld.projectboard.dto.response.ArticleWithCommentsResponseTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

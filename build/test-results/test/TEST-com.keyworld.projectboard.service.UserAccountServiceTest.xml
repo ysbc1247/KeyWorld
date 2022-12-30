@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="비즈니스 로직 - 회원" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-29T14:14:48" hostname="Kimui-MacBookAir.local" time="0.003">
+  <properties/>
+  <testcase name="회원 정보를 입력하면, 새로운 회원 정보를 저장하여 가입시키고 해당 회원 데이터를 리턴한다." classname="com.keyworld.projectboard.service.UserAccountServiceTest" time="0.001"/>
+  <testcase name="존재하지 않는 회원 ID를 검색하면, 비어있는 Optional을 반환한다." classname="com.keyworld.projectboard.service.UserAccountServiceTest" time="0.0"/>
+  <testcase name="존재하는 회원 ID를 검색하면, 회원 데이터를 Optional로 반환한다." classname="com.keyworld.projectboard.service.UserAccountServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

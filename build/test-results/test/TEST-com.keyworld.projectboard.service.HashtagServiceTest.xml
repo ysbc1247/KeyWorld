@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="비즈니스 로직 - 해시태그" tests="38" skipped="0" failures="0" errors="0" timestamp="2022-12-29T14:14:48" hostname="Kimui-MacBookAir.local" time="0.031">
+  <properties/>
+  <testcase name="해시태그 이름들을 입력하면, 저장된 해시태그 중 이름에 매칭하는 것들을 중복 없이 반환한다." classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[1] &quot;null&quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.005"/>
+  <testcase name="[2] &quot;&quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[3] &quot;   &quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[4] &quot;#&quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[5] &quot;  #&quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[6] &quot;#   &quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[7] &quot;java&quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[8] &quot;java#&quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[9] &quot;ja#va&quot; =&gt; [va]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[10] &quot;#java&quot; =&gt; [java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[11] &quot;#java_spring&quot; =&gt; [java_spring]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[12] &quot;#java-spring&quot; =&gt; [java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[13] &quot;#_java_spring&quot; =&gt; [_java_spring]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[14] &quot;#-java-spring&quot; =&gt; []" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[15] &quot;#_java_spring__&quot; =&gt; [_java_spring__]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[16] &quot;#java#spring&quot; =&gt; [spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[17] &quot;#java #spring&quot; =&gt; [spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[18] &quot;#java  #spring&quot; =&gt; [spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[19] &quot;#java   #spring&quot; =&gt; [spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[20] &quot;#java     #spring&quot; =&gt; [spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[21] &quot;  #java     #spring &quot; =&gt; [spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[22] &quot;   #java     #spring   &quot; =&gt; [spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[23] &quot;#java#spring#부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[24] &quot;#java #spring#부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[25] &quot;#java#spring #부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[26] &quot;#java,#spring,#부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[27] &quot;#java.#spring;#부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[28] &quot;#java|#spring:#부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[29] &quot;#java #spring  #부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[30] &quot;   #java,? #spring  ...  #부트 &quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[31] &quot;#java#java#spring#부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[32] &quot;#java#java#java#spring#부트&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[33] &quot;#java#spring#java#부트#java&quot; =&gt; [부트, spring, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[34] &quot;#java#스프링 아주 긴 글~~~~~~~~~~~~~~~~~~~~~&quot; =&gt; [스프링, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <testcase name="[35] &quot;아주 긴 글~~~~~~~~~~~~~~~~~~~~~#java#스프링&quot; =&gt; [스프링, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[36] &quot;아주 긴 글~~~~~~#java#스프링~~~~~~~~~~~~~~~&quot; =&gt; [스프링, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.0"/>
+  <testcase name="[37] &quot;아주 긴 글~~~~~~#java~~~~~~~#스프링~~~~~~~~&quot; =&gt; [스프링, java]" classname="com.keyworld.projectboard.service.HashtagServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

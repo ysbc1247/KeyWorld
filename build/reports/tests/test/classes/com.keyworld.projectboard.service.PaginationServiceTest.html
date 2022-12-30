@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - 비즈니스 로직 - 페이지네이션</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>비즈니스 로직 - 페이지네이션</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.keyworld.projectboard.service.html">com.keyworld.projectboard.service</a> &gt; PaginationServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.006s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[10] 현재 페이지: 12, 총 페이지: 13 =&gt; [10, 11, 12]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[10]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] 현재 페이지: 0, 총 페이지: 13 =&gt; [0, 1, 2, 3, 4]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[1]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] 현재 페이지: 1, 총 페이지: 13 =&gt; [0, 1, 2, 3, 4]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[2]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] 현재 페이지: 2, 총 페이지: 13 =&gt; [0, 1, 2, 3, 4]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[3]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] 현재 페이지: 3, 총 페이지: 13 =&gt; [1, 2, 3, 4, 5]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[4]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] 현재 페이지: 4, 총 페이지: 13 =&gt; [2, 3, 4, 5, 6]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[5]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6] 현재 페이지: 5, 총 페이지: 13 =&gt; [3, 4, 5, 6, 7]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[6]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[7] 현재 페이지: 6, 총 페이지: 13 =&gt; [4, 5, 6, 7, 8]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[7]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[8] 현재 페이지: 10, 총 페이지: 13 =&gt; [8, 9, 10, 11, 12]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[8]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[9] 현재 페이지: 11, 총 페이지: 13 =&gt; [9, 10, 11, 12]</td>
+<td class="success">givenCurrentPageNumberAndTotalPages_whenCalculating_thenReturnsPaginationBarNumbers(int, int, List)[9]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">현재 설정되어 있는 페이지네이션 바의 길이를 알려준다.</td>
+<td class="success">givenNothing_whenCalling_thenReturnsCurrentBarLength()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-12-29 23:14:48.898  INFO 68088 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.keyworld.projectboard.service.PaginationServiceTest], using SpringBootContextLoader
+2022-12-29 23:14:48.898  INFO 68088 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.keyworld.projectboard.service.PaginationServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-29 23:14:48.899  INFO 68088 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-29 23:14:48.900  INFO 68088 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2603ad0a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d532099, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@463aa3da, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@770ad1f0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4cda59e6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78b9ef0c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b8eb7b2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4aaa6e62, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@54210bb8, org.springframework.test.context.event.EventPublishingTestExecutionListener@63574fbf, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@7d7a4740, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@643afff3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@381a4407, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6169de0c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4e06d526, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7d707e72, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@17a027a7]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2022-12-29 23:14:48.910  INFO 68088 --- [    Test worker] c.k.p.service.PaginationServiceTest      : Starting PaginationServiceTest using Java 17.0.5 on Kimui-MacBookAir.local with PID 68088 (started by kimtheo in /Users/kimtheo/Documents/GitHub/KeyWorld)
+2022-12-29 23:14:48.910 DEBUG 68088 --- [    Test worker] c.k.p.service.PaginationServiceTest      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-12-29 23:14:48.910  INFO 68088 --- [    Test worker] c.k.p.service.PaginationServiceTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-12-29 23:14:48.913  INFO 68088 --- [    Test worker] c.k.p.service.PaginationServiceTest      : Started PaginationServiceTest in 0.012 seconds (JVM running for 7.154)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at Dec 29, 2022, 11:14:49 PM</p>
+</div>
+</div>
+</body>
+</html>

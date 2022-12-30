@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="비즈니스 로직 - 댓글" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-12-29T14:14:48" hostname="Kimui-MacBookAir.local" time="0.07">
+  <properties/>
+  <testcase name="댓글 ID를 입력하면, 댓글을 삭제한다." classname="com.keyworld.projectboard.service.ArticleCommentServiceTest" time="0.063"/>
+  <testcase name="댓글 저장을 시도했는데 맞는 게시글이 없으면, 경고 로그를 찍고 아무것도 안 한다." classname="com.keyworld.projectboard.service.ArticleCommentServiceTest" time="0.001"/>
+  <testcase name="게시글 ID로 조회하면, 해당하는 댓글 리스트를 반환한다." classname="com.keyworld.projectboard.service.ArticleCommentServiceTest" time="0.002"/>
+  <testcase name="부모 댓글 ID와 댓글 정보를 입력하면, 대댓글을 저장한다." classname="com.keyworld.projectboard.service.ArticleCommentServiceTest" time="0.001"/>
+  <testcase name="댓글 정보를 입력하면, 댓글을 저장한다." classname="com.keyworld.projectboard.service.ArticleCommentServiceTest" time="0.002"/>
+  <system-out><![CDATA[2022-12-29 23:14:48.824  WARN 68088 --- [    Test worker] c.k.p.service.ArticleCommentService      : 댓글 저장 실패. 댓글 작성에 필요한 정보를 찾을 수 없습니다 - null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
